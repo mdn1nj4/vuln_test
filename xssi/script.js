@@ -29,3 +29,10 @@ TpCpdZksy+sgh/W/h9T7pDH272szBDo6g1TIQMCgPiAt/2yFNWU6Hks=\
       { name: 'Key No 1', apiKey: '0c8aab23-2ab5-46c5-a0f2-e52ecf7d6ea8', privateKey: privateKey },
       { name: 'Key No 2', apiKey: '1e4b8312-f767-43eb-a16b-d44d3e471198', privateKey: privateKey }
     ];
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
